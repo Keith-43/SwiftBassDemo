@@ -1,14 +1,13 @@
-///  Spectrum.swift
-///  MuVis
-///
-/// This view renders a visualization of the simple one-dimensional spectrum (using a mean-square amplitude scale) of the music.
-/// It renders only the first 512 of the 8192 bins.  Thus, highest frequency is 44,100 / 16 = 2,756.25 Hz
-///
-/// The horizontal axis is linear frequency ( from 0.0 Hz on the left to 2,756.25 Hz on the right ).
-/// The vertical axis shows (in red) the mean-square amplitude of the instantaneous spectrum of the audio being played.
-/// The red peaks are spectral lines depicting the harmonics of the musical notes being played.
-///
-/// Created by Keith Bromley on 20 Nov 2020.
+//  Spectrum.swift
+//  SwiftBassDemo
+//
+// This view renders a visualization of the simple one-dimensional spectrum (using a mean-square amplitude scale) of the music.
+// It renders only the first 512 of the 8192 bins.  Thus, highest frequency is 44,100 / 32 = 1,378.125 Hz
+//
+// The horizontal axis is linear frequency ( from 0.0 Hz on the left to 1,378.125 Hz on the right ).
+// The vertical axis shows (in red) the mean-square amplitude of the instantaneous spectrum of the audio being played.
+// The red peaks are spectral lines depicting the harmonics of the musical notes being played.
+//
 
 
 import SwiftUI

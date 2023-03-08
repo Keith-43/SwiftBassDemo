@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  SwiftBassDemo
 //
-//  Created by Keith Bromley on 3/7/23.
-//
 
 import SwiftUI
 

@@ -6,10 +6,9 @@
 //  Our FFT window of 16,384 samples has a duration of 16,384 / 44,100 = 0.37152 seconds.
 //  We calculate a new spectrum every 1/60 seconds, hence our window overlap factor is (0.37152-0.16666)/0.37152 = 55%
 //
-//  Created by Keith Bromley on 2/24/23.
-//
 
-import AVFoundation
+
+import Foundation
 
 class AudioManager: ObservableObject {
 

@@ -1,7 +1,7 @@
 # SwiftBassDemo
 This app uses the BASS audio library to render a real-time spectrum of a music file or live microphone input.
 
-This is a Swift Xcode project incorporating the BASS audio library.  It is multiplatform (meaning it works on both macOS and iOS devices).  The app has BASS code to play an included mp3 music file and render it's real-time spectrum.  Changing the MicOn variable to true enables live microphone input.
+This is a Swift Xcode project incorporating the BASS audio library.  It is multiplatform (meaning it works on both macOS and iOS devices).  The app has BASS code to play an included mp3 music file and render it's real-time spectrum.  (The license-free music file is "The Elevator Bossa Nova" from Bensound.com ).  Changing the MicOn variable to true enables live microphone input.
 
 The BASS audio library is free for non-commercial usage.  For commercial usage, see https://www.un4seen.com for licensing information.
 

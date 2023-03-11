@@ -6,7 +6,7 @@ This is a Swift Xcode project incorporating the BASS audio library.  It is multi
 The BASS audio library is free for non-commercial usage.  For commercial usage, see https://www.un4seen.com for licensing information.
 
 -------------------
-Here's how I created this project.  (I used the newest versions of macOS 13.2.1, iOS 16.3.1, and Xcode 14.2 on 7 March 2023.)  
+Here's how I created this project.  (I used the newest versions of macOS 13.2.1, iOS 16.3.1, Xcode 14.2 and BASS 2.4.17 on 7 March 2023.)  
 
 Step 1:  
 In Xcode, create a new Multiplatform App named SwiftBassDemo.  Build and run it to get a window displaying "Hello, world!". This creates a SwiftBassDemo project which contains (in the Finder window used by Xcode) the file structure:

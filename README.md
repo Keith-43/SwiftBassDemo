@@ -36,12 +36,12 @@ Place this file into your project folder.  (Remember to tell Xcode about this ne
 
 The project folder in your Finder window should now look like:
 
-	SwiftBassDemo (folder)
+	SwiftBassDemo (project folder)
 		bass.h
 		bass.xcframework (folder)
 		bridging-header.h
 		libbass.dylib
-		SwiftBassDemo (folder)
+		SwiftBassDemo (app folder)
 		SwiftBassDemo.xcodeproj
 
 Step 5:  
@@ -50,6 +50,9 @@ In the SwiftBassDemo PROJECT | Build Settings | Swift Compiler - General,  set "
 Step 6:  
 In Xcode's Project Navigator pane (typically on the far left of the Xcode window), select the SwiftBassDemo project at the top.  In the pane to the immediate right-hand side of the Project Navigator pane, select the SwiftBassDemo under TARGETS.  In the Build Phases section, there is a category labelled "Embedded Frameworks”.  Within this category, confirm that both the bass.xcframework and libbass.dylib are named.  If not, add them.  In the Filters subcolumn, confirm that "Allow any platform" has been changed to "iOS" for the former item and to "macOS" for the latter item.  Confirm that the "Code Sign On Co..." box is checked for both items. 
 
-Step 7:  
+Step 7:
+Following the above steps will produce an app that works as desired.  However, if you want to distribute your app on Apple's App Store, you will need to remove the i386 32-bit code from the libbass.dylib file so that your app passes Apple's verification test.  To do this, use the Terminal app in your Applications | Utilities folder, change it's target directory (using the "cd" command) to your bass24-osx folder (from steps 1 and 2), and enter the command "make 64bit".  This creates a folder named "64bit" which contains a new libbass.dylib file.  Replace the file in your SwiftBassDemo project forlder with this new one.  In Xcode, run your SwiftBassDemo project again, and it should now pass Apple's verification test.
+
+Step 8:  
 To enable live microphone input, check the "Resource Access: Audio Input" box in the SwiftBassDemo TARGET, "Signing & Capabilites" heading, "All" subheading, "Hardened Runtime" section.  
 Also, you must add a "Privacy - Microphone Usage Description" (such as "This app analyzes audio from the microphone."  Add this in the SwiftBassDemo TARGET, Info heading, "Custom Application Target Properties" section.
